@@ -30,13 +30,6 @@ export default function ParentResources() {
       <div className="divider"></div>
       <h2 className="studentLinkHeader">Parent Newsletter:</h2>
       <div className="docContainer">
-        <a
-          href="https://docs.google.com/document/d/1XcI3jItGKmKyfNRSOe4jyoD5bBTw78wCWsQM8Eih7yQ/edit"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Open in Google Drive
-        </a>
         <iframe
           width="800"
           height="700"
