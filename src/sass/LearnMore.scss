@@ -1,0 +1,37 @@
+@import "/src/sass/variables";
+
+.learnMoreContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+
+  .learnMoreImg {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 75%;
+    }
+  }
+
+  .learnMoreText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    .learnText {
+      h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 3.2px;
+        line-height: 1.3;
+        text-align: center;
+      }
+    }
+  }
+}

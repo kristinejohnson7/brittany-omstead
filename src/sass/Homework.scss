@@ -1,0 +1,35 @@
+@import "/src/sass/variables";
+
+.hwrkHeaderContainer {
+  background: $light-teal;
+  color: $white;
+  padding: 30px;
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    width: 80%;
+  }
+}
+
+.docContainer {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  position: relative;
+  width: 900px;
+
+  a {
+    position: absolute;
+    background: $light-teal;
+    color: $white;
+    padding: 10px;
+    border-radius: 7px;
+    top: 15px;
+    right: 75px;
+  }
+}

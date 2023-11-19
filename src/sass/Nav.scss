@@ -1,0 +1,22 @@
+@import "/src/sass/variables";
+
+.navList {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 2rem;
+
+  .navImg img {
+    max-height: 140px;
+    max-width: 350px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    &:hover {
+      color: $dark-teal;
+    }
+  }
+}

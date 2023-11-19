@@ -1,0 +1,15 @@
+@import "/src/sass/variables";
+
+.footerContainer {
+  border-top: 5px solid $light-teal;
+  padding: 15px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logoImg img {
+    height: 91px;
+    width: 191px;
+  }
+}

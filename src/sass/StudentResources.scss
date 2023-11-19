@@ -1,0 +1,72 @@
+@import "/src/sass/variables";
+
+.headerContainer {
+  background: $light-teal;
+  color: $white;
+  padding: 30px;
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    width: 80%;
+  }
+}
+
+.resourceHeader {
+  // background: $medium-grey;
+  padding: 30px;
+  font-size: 1.2rem;
+
+  li {
+    margin-bottom: 15px;
+    p a {
+      font-weight: 600;
+      color: $dark-teal;
+      text-decoration: underline;
+    }
+  }
+}
+
+.divider {
+  border: 3px solid $light-teal;
+  margin: auto;
+  width: 90%;
+}
+
+.studentLinkHeader {
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.studentLinksContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 90%;
+  margin: 20px auto;
+
+  .linkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+      border-radius: 7px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      width: 230px;
+      height: 260px;
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 7px;
+    }
+  }
+}
