@@ -1,9 +1,17 @@
 @import "/src/sass/variables";
 
+.bgContainer {
+  margin: auto;
+  max-width: 1200px;
+}
+
+#about {
+  background-color: $orange;
+}
+
 .aboutContainer {
   display: flex;
   align-items: center;
-  background-color: $orange;
   justify-content: center;
   height: 600px;
   width: 100%;

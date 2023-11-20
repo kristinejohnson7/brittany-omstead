@@ -6,14 +6,16 @@ export default function ParentResources() {
   return (
     <div>
       <div className="hwrkHeaderContainer">
-        <h2>Parent Resources</h2>
-        <p>
-          Welcome to our Parent Resources section! Explore helpful guides, tips
-          for fostering a positive learning environment at home, and stay
-          informed about upcoming events and curriculum updates. Together, we
-          can ensure a seamless collaboration between home and school, nurturing
-          a thriving educational experience for your child.
-        </p>
+        <div className="bgContainer">
+          <h2>Parent Resources</h2>
+          <p>
+            Welcome to our Parent Resources section! Explore helpful guides,
+            tips for fostering a positive learning environment at home, and stay
+            informed about upcoming events and curriculum updates. Together, we
+            can ensure a seamless collaboration between home and school,
+            nurturing a thriving educational experience for your child.
+          </p>
+        </div>
       </div>
       <h2 className="studentLinkHeader">Parent Links:</h2>
       <div className="studentLinksContainer">

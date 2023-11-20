@@ -9,13 +9,15 @@ export default function StudentResources() {
   return (
     <div>
       <div className="headerContainer">
-        <h2>Student Resources</h2>
-        <p>
-          Welcome to our Student Resources hub, a dedicated space designed to
-          empower and support our students on their educational journey. Here,
-          you'll find a treasure trove of tools and materials carefully curated
-          to enhance your learning experience.
-        </p>
+        <div className="bgContainer">
+          <h2>Student Resources</h2>
+          <p>
+            Welcome to our Student Resources hub, a dedicated space designed to
+            empower and support our students on their educational journey. Here,
+            you'll find a treasure trove of tools and materials carefully
+            curated to enhance your learning experience.
+          </p>
+        </div>
       </div>
       <div className="resourceHeader">
         <h2>Before you Begin:</h2>
@@ -89,7 +91,6 @@ export default function StudentResources() {
           <p>KHAN ACADEMY</p>
         </a>
       </div>
-      {/* <div className="divider" style={{ marginBottom: 50 }}></div> */}
     </div>
   );
 }

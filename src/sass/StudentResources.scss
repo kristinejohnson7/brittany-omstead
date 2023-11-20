@@ -17,9 +17,10 @@
 }
 
 .resourceHeader {
-  // background: $medium-grey;
   padding: 30px;
   font-size: 1.2rem;
+  margin: auto;
+  max-width: 1200px;
 
   li {
     margin-bottom: 15px;
@@ -39,7 +40,8 @@
 
 .studentLinkHeader {
   padding-left: 30px;
-  margin-top: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
 .studentLinksContainer {

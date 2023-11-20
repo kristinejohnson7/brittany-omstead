@@ -5,11 +5,13 @@ export default function Home() {
   return (
     <div>
       <div className="hwrkHeaderContainer">
-        <h2>Homework</h2>
-        <p>
-          Stay updated on upcoming homework assignments and deadlines. Make sure
-          to check this section regularly for any new tasks or projects.
-        </p>
+        <div className="bgContainer">
+          <h2>Homework</h2>
+          <p>
+            Stay updated on upcoming homework assignments and deadlines. Make
+            sure to check this section regularly for any new tasks or projects.
+          </p>
+        </div>
       </div>
       <div className="docContainer">
         <a
@@ -27,12 +29,14 @@ export default function Home() {
         ></iframe>
       </div>
       <div className="hwrkHeaderContainer">
-        <h2>Schedule and Calendar</h2>
-        <p>
-          Find the class schedule to know when and where your classes take
-          place. This includes lecture times, discussion sessions, and any
-          additional meetings.
-        </p>
+        <div className="bgContainer">
+          <h2>Schedule and Calendar</h2>
+          <p>
+            Find the class schedule to know when and where your classes take
+            place. This includes lecture times, discussion sessions, and any
+            additional meetings.
+          </p>
+        </div>
       </div>
       <div className="docContainer">
         <iframe
