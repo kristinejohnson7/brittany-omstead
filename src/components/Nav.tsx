@@ -30,7 +30,7 @@ export default function Nav() {
             {/* {leftNavOptions.map((item, index) => ( */}
             <li>
               <Link to={"/homework"} onClick={hideBars}>
-                Homework
+                Schedule & Homework
               </Link>
             </li>{" "}
             <li>

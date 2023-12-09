@@ -30,12 +30,7 @@ export default function Home() {
       </div>
       <div className="hwrkHeaderContainer">
         <div className="bgContainer">
-          <h2>Schedule and Calendar</h2>
-          <p>
-            Find the class schedule to know when and where your classes take
-            place. This includes lecture times, discussion sessions, and any
-            additional meetings.
-          </p>
+          <h2>Classroom Schedule</h2>
         </div>
       </div>
       <div className="docContainer">

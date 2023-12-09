@@ -1,6 +1,9 @@
 import React from "react";
 import "../sass/ParentResources.scss";
 import gvlogo from "../assets/gvelem.png";
+import schoologoy from "../assets/schoology.jpg";
+import zoom from "../assets/zoom.png";
+import eurka from "../assets/eurka.png";
 
 export default function ParentResources() {
   return (
@@ -18,16 +21,56 @@ export default function ParentResources() {
         </div>
       </div>
       <h2 className="studentLinkHeader">Parent Links:</h2>
-      <div className="studentLinksContainer">
-        <a
-          href="https://gves.srvusd.net/"
-          target="_blank"
-          rel="noreferrer"
-          className="linkContainer"
-        >
-          <img src={gvlogo} alt="student resource" />
-          <p>GREEN VALLEY ELEMENTARY</p>
-        </a>{" "}
+      <div className="studentLinksContainer parentContainer">
+        <div className="studentItem">
+          <a
+            href="https://gves.srvusd.net/"
+            target="_blank"
+            rel="noreferrer"
+            className="linkContainer"
+          >
+            <img src={gvlogo} alt="parent resource" />
+          </a>
+          <h3>GREEN VALLEY ELEMENTARY</h3>
+        </div>
+        <div className="studentItem">
+          <a
+            href="https://classroom.google.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="linkContainer"
+          >
+            <img src={schoologoy} alt="parent resource" />
+          </a>
+          <h3>SCHOOLOGY</h3>
+        </div>{" "}
+        <div className="studentItem">
+          <a
+            href="https://srvusd-net.zoom.us/j/6572162250?pwd=K2IyUysvbEJTN1l2WFBOcGQ3dFpyUT09#success"
+            target="_blank"
+            rel="noreferrer"
+            className="linkContainer"
+          >
+            <img src={zoom} alt="parent resource" />
+          </a>
+          <h3>ZOOM</h3>
+          <p>
+            Zoom may be used sometimes for parent conferences or parent
+            meetings.
+          </p>
+        </div>{" "}
+        <div className="studentItem">
+          <a
+            href="https://srvusd-net.zoom.us/j/6572162250?pwd=K2IyUysvbEJTN1l2WFBOcGQ3dFpyUT09#success"
+            target="_blank"
+            rel="noreferrer"
+            className="linkContainer"
+          >
+            <img src={eurka} alt="parent resource" />
+          </a>
+          <h3>ENGAGE EUREKA MATH</h3>
+          <p>Additional videos to support math</p>
+        </div>
       </div>
       <div className="divider"></div>
       <h2 className="studentLinkHeader">Parent Newsletter:</h2>

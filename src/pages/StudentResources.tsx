@@ -13,9 +13,9 @@ export default function StudentResources() {
           <h2>Student Resources</h2>
           <p>
             Welcome to our Student Resources hub, a dedicated space designed to
-            empower and support our students on their educational journey. Here,
-            you'll find a treasure trove of tools and materials carefully
-            curated to enhance your learning experience.
+            empower and support your learning. Here, you'll find a treasure
+            trove of tools and materials carefully curated to enhance your
+            learning experience.
           </p>
         </div>
       </div>
@@ -39,10 +39,11 @@ export default function StudentResources() {
               information. As a reminder it looks like this:
             </p>
             <p>
-              Login: (Student ID number)@students.srvusd.net Password: Your
-              individually set password If you have forgotten your login or
-              password, let me know (Use "I Need Help Button" above) and I will
-              help.{" "}
+              Login: (student ID #)@students.srvusd.net Password: Your
+              individual set password
+              <br />
+              If you need to reset please email me or let me know in class and I
+              can help you.
             </p>
           </li>
           <li>
@@ -54,15 +55,18 @@ export default function StudentResources() {
       <div className="divider"></div>
       <h2 className="studentLinkHeader">Student Links:</h2>
       <div className="studentLinksContainer" style={{ marginBottom: 70 }}>
-        <a
-          href="https://classroom.google.com/"
-          target="_blank"
-          rel="noreferrer"
-          className="linkContainer"
-        >
-          <img src={schoologoy} alt="student resource" />
-          <p>SCHOOLOGOY</p>
-        </a>{" "}
+        <div className="studentItem">
+          <a
+            href="https://classroom.google.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="linkContainer"
+          >
+            <img src={schoologoy} alt="student resource" />
+          </a>
+          <h3>SCHOOLOGY</h3>
+          <p>Find and turn in some assignment here.</p>
+        </div>
         <a
           href="https://docs.google.com/presentation/d/1nZX6vb0FB0dkwahk9GNvGQLuqZpOc3Ad5uROjmYYCMw/edit#slide=id.gab4e1e7158_0_523"
           target="_blank"
@@ -72,15 +76,19 @@ export default function StudentResources() {
           <img src={engage} alt="student resource" />
           <p>ENGAGE NY VIDEOS</p>
         </a>
-        <a
-          href="https://xtramath.org/#/signin/student_other"
-          target="_blank"
-          rel="noreferrer"
-          className="linkContainer"
-        >
-          <img src={xtra} alt="student resource" />
-          <p>XTRA MATH</p>
-        </a>{" "}
+        <div className="studentItem">
+          <a
+            href="https://xtramath.org/#/signin/student_other"
+            target="_blank"
+            rel="noreferrer"
+            className="linkContainer"
+          >
+            <img src={xtra} alt="student resource" />
+          </a>
+          <h3>XTRA MATH</h3>
+          <p>Practise your multiplication and division facts</p>
+        </div>
+
         <a
           href="https://www.khanacademy.org/"
           target="_blank"
