@@ -11,15 +11,27 @@ export default function About() {
           <div className="heroText">
             <div className="heroTextContainer">
               <h2>About Me</h2>
+              <p>Hello, amazing Green Valley parents and students! </p>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Obcaecati, doloribus sit aspernatur placeat sed error quam iste
-                assumenda labore, quasi, a esse non expedita ratione aliquam ex
-                porro eos. Commodi. Corporis dolore provident enim. Laudantium
-                ipsam at voluptas laboriosam voluptatibus, est saepe. Quidem
-                voluptatum voluptas voluptatem. Fuga dolorem modi, magni
-                expedita consequuntur quia praesentium aliquam distinctio
-                necessitatibus cupiditate rem. Molestias.
+                My adventure in teaching began at a young age when I established
+                my teaching business at 15 teaching swimming lessons. In my
+                career, I&#39;ve had the privilege of collaborating with film
+                productions as a studio teacher celebrating the art of
+                storytelling through motion pictures. Since then, my path has
+                been diverse, from teaching across Canada on features &amp;
+                tv-series.
+              </p>
+              <p>
+                I had a traveling classroom including a French colonial village
+                for National Geographic, in the world of nemo in Slumberland.
+              </p>
+              <p>
+                Throughout these experiences, the joy of learning has remained a
+                constant. Teaching English and music lessons in Central America,
+                serving as a studio teacher for companies like Netflix, Happy
+                Madison, and Disney+, and instructing at Convent of the Sacred
+                Heart in San Francisco, have all enriched my teaching toolbox,
+                particularly influencing my responsive classroom approach.
               </p>
             </div>
           </div>

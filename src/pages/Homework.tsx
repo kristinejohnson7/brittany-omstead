@@ -4,7 +4,7 @@ import "../sass/Homework.scss";
 export default function Home() {
   return (
     <div>
-      <div className="hwrkHeaderContainer">
+      <div className="headerContainer">
         <div className="bgContainer">
           <h2>Homework</h2>
           <p>

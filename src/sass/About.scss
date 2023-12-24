@@ -15,6 +15,7 @@
   justify-content: center;
   height: 600px;
   width: 100%;
+  gap: 30px;
 
   .aboutImg {
     display: "flex";
@@ -45,7 +46,7 @@
     width: 100%;
 
     .heroTextContainer {
-      width: 50%;
+      width: 70%;
 
       h2 {
         color: $white;
@@ -57,7 +58,9 @@
       }
 
       p {
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-family: "Roboto", "sans-serif";
       }
     }
   }

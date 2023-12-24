@@ -8,7 +8,7 @@ import eurka from "../assets/eurka.png";
 export default function ParentResources() {
   return (
     <div>
-      <div className="hwrkHeaderContainer">
+      <div className="headerContainer">
         <div className="bgContainer">
           <h2>Parent Resources</h2>
           <p>
@@ -43,6 +43,10 @@ export default function ParentResources() {
             <img src={schoologoy} alt="parent resource" />
           </a>
           <h3>SCHOOLOGY</h3>
+          <p>
+            Some student assignments and area content in subject folders will be
+            posted here.{" "}
+          </p>
         </div>{" "}
         <div className="studentItem">
           <a
@@ -71,16 +75,46 @@ export default function ParentResources() {
           <h3>ENGAGE EUREKA MATH</h3>
           <p>Additional videos to support math</p>
         </div>
+        <div className="studentItem">
+          <iframe
+            src="https://drive.google.com/file/d/18nh6XHf60ShQIViQ74MggjFekbRiaBYx/preview"
+            width="230"
+            height="220"
+            allow="autoplay"
+            style={{ borderRadius: "7px" }}
+            title="strengths article"
+          ></iframe>
+
+          <h3>TALENTS/STRENGTHS DESCRIPTIONS</h3>
+          <p>Additional videos to support math</p>
+        </div>
       </div>
       <div className="divider"></div>
-      <h2 className="studentLinkHeader">Parent Newsletter:</h2>
-      <div className="docContainer">
-        <iframe
-          width="800"
-          height="700"
-          title="newsletter "
-          src="https://docs.google.com/document/d/e/2PACX-1vRedy4gMSURLqqKhnM1q_LpIeSF1CSaGyae75TP4eC3hap-tCeOgTsF7gpMoUqxZYWOeTJ41E1qn8fo/pub?embedded=true"
-        ></iframe>
+      <h2 className="studentLinkHeader">Parent Newsletters:</h2>
+      <div className="studentLinksContainer">
+        <div className="studentItem">
+          <iframe
+            src="https://docs.google.com/document/d/e/2PACX-1vQq5ALjugPcYfzRMq9mnq4YhW8aLrT6cFCcBTrRkkFsFP6zVzEsSm9kPpAC6GxjD1eEWw39smRs4Pf8/pub?embedded=true"
+            width="230"
+            height="220"
+            allow="autoplay"
+            style={{ borderRadius: "7px" }}
+            title="newsletter"
+          ></iframe>
+
+          <h3>Welcome Letter</h3>
+        </div>
+        <div className="studentItem">
+          <iframe
+            src="https://drive.google.com/file/d/10N79ZTZGi0EkFRE-DMK7V9F_FIgGutQd/preview"
+            width="230"
+            height="220"
+            allow="autoplay"
+            style={{ borderRadius: "7px" }}
+            title="newsletter"
+          ></iframe>
+          <h3>Camp Naturebridge Info.</h3>
+        </div>
       </div>
     </div>
   );

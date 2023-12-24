@@ -26,6 +26,11 @@ export default function Nav() {
           className="collapse navbar-collapse navOptions navbar-toggleable-lg"
           id="navbarCollapse"
         >
+          <div className="navImg">
+            <NavLink to="/">
+              <img src={logo} alt="" />
+            </NavLink>
+          </div>
           <ul className="navList">
             {/* {leftNavOptions.map((item, index) => ( */}
             <li>
@@ -39,11 +44,6 @@ export default function Nav() {
               </Link>
             </li>
             {/* ))} */}
-            <div className="navImg">
-              <NavLink to="/">
-                <img src={logo} alt="" />
-              </NavLink>
-            </div>
             <li>
               <Link to={"/parent-resources"} onClick={hideBars}>
                 Parent Resources

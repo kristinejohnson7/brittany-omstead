@@ -4,10 +4,13 @@ import schoologoy from "../assets/schoology.jpg";
 import xtra from "../assets/xtra.png";
 import khan from "../assets/khan.png";
 import engage from "../assets/engage.png";
+import signIn from "../assets/googleSignIn.png";
+import math from "../assets/math.png";
+import srvusd from "../assets/srvusd.png";
 
 export default function StudentResources() {
   return (
-    <div>
+    <div className="studentPage">
       <div className="headerContainer">
         <div className="bgContainer">
           <h2>Student Resources</h2>
@@ -21,7 +24,7 @@ export default function StudentResources() {
       </div>
       <div className="resourceHeader">
         <h2>Before you Begin:</h2>
-        <ol>
+        <ol className="listStyles">
           <li>
             <p>
               You should log into you student account through Google. To do this
@@ -36,12 +39,21 @@ export default function StudentResources() {
             <p>
               {" "}
               You will be prompted to sign in. Use your student log-in
-              information. As a reminder it looks like this:
+              information.
+            </p>
+            <p style={{ margin: "10px 0" }}>
+              As a reminder it looks like this:
+            </p>
+            <ul
+              style={{ marginLeft: "20px", marginTop: "20px", fontWeight: 700 }}
+            >
+              <li> Login: (student ID #)@students.srvusd.net</li>
+              <li>Password: Your individual set password</li>
+            </ul>
+            <p className="signInPic">
+              <img src={signIn} alt="sign in example" />
             </p>
             <p>
-              Login: (student ID #)@students.srvusd.net Password: Your
-              individual set password
-              <br />
               If you need to reset please email me or let me know in class and I
               can help you.
             </p>
@@ -67,15 +79,33 @@ export default function StudentResources() {
           <h3>SCHOOLOGY</h3>
           <p>Find and turn in some assignment here.</p>
         </div>
-        <a
-          href="https://docs.google.com/presentation/d/1nZX6vb0FB0dkwahk9GNvGQLuqZpOc3Ad5uROjmYYCMw/edit#slide=id.gab4e1e7158_0_523"
-          target="_blank"
-          rel="noreferrer"
-          className="linkContainer"
-        >
-          <img src={engage} alt="student resource" />
-          <p>ENGAGE NY VIDEOS</p>
-        </a>
+        <div className="studentItem">
+          <a
+            href="https://sites.google.com/srvusd.net/gv5thgrademath/home"
+            target="_blank"
+            rel="noreferrer"
+            className="linkContainer"
+          >
+            <img src={math} alt="student resource" />
+          </a>
+          <h3>MATH WEBSITE</h3>
+          <p>
+            This is our Modern Classroom website and links to problem sets and
+            exit tickets.
+          </p>
+        </div>
+        <div className="studentItem">
+          <a
+            href="https://docs.google.com/presentation/d/1nZX6vb0FB0dkwahk9GNvGQLuqZpOc3Ad5uROjmYYCMw/edit#slide=id.gab4e1e7158_0_523"
+            target="_blank"
+            rel="noreferrer"
+            className="linkContainer"
+          >
+            <img src={engage} alt="student resource" />
+            <h3>ENGAGE NY VIDEOS</h3>
+            <p>Eureka Math Modules </p>
+          </a>
+        </div>
         <div className="studentItem">
           <a
             href="https://xtramath.org/#/signin/student_other"
@@ -86,18 +116,31 @@ export default function StudentResources() {
             <img src={xtra} alt="student resource" />
           </a>
           <h3>XTRA MATH</h3>
-          <p>Practise your multiplication and division facts</p>
+          <p>Practice your multiplication and division facts</p>
         </div>
-
-        <a
-          href="https://www.khanacademy.org/"
-          target="_blank"
-          rel="noreferrer"
-          className="linkContainer"
-        >
-          <img src={khan} alt="student resource" />
-          <p>KHAN ACADEMY</p>
-        </a>
+        <div className="studentItem">
+          <a
+            href="https://www.khanacademy.org/"
+            target="_blank"
+            rel="noreferrer"
+            className="linkContainer"
+          >
+            <img src={khan} alt="student resource" />
+            <h3>KHAN ACADEMY</h3>
+            <p>Khan course lessons and practice </p>
+          </a>
+        </div>
+        <div className="studentItem">
+          <a
+            href="https://launchpad.classlink.com/srvusd?loggedout=1"
+            target="_blank"
+            rel="noreferrer"
+            className="linkContainer"
+          >
+            <img src={srvusd} alt="student resource" />
+            <h3>SRVUSD PORTAL</h3>
+          </a>
+        </div>
       </div>
     </div>
   );
