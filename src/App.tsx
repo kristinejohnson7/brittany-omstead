@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./pages/Home";
-import Nav from "./components/Nav";
+import NavBar from "./components/Nav";
 import "./sass/_global.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homework from "./pages/Homework";
@@ -10,7 +10,7 @@ import ParentResources from "./pages/ParentResources";
 function App() {
   return (
     <Router>
-      <Nav />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/homework" element={<Homework />} />

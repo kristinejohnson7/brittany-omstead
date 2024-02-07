@@ -1,88 +1,62 @@
-import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "react-bootstrap/Navbar";
-import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 import ScrollHandler from "./ScrollHandler";
-// import { ReactComponent as Bars } from "../../assets/bars.svg";
 import "../sass/Nav.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar, Nav, NavLink } from "react-bootstrap";
 
-export default function Nav() {
-  const navRef = useRef();
-
-  const showNavBar = () => {
-    // navRef?.current?.classList?.toggle("responsive_nav");
-  };
-
-  const hideBars = () => {
-    // navRef.current.setAttribute("class", "navbar-collapse collapse");
-  };
-
+export default function NavBar() {
   return (
-    <Navbar sticky="top">
-      <header className="navBar">
-        <nav
-          // ref={navRef}
-          className="collapse navbar-collapse navOptions navbar-toggleable-lg"
-          id="navbarCollapse"
-        >
-          <div className="navImg">
-            <NavLink to="/">
-              <img src={logo} alt="" />
+    <header className="navBar">
+      <div className="navImg">
+        <NavLink as={Link} to="/">
+          <img src={logo} alt="" />
+        </NavLink>
+      </div>
+      <Navbar sticky="top" collapseOnSelect expand="sm">
+        <Navbar.Toggle
+          aria-controls="navbarScroll"
+          data-bs-target="#navbarScroll"
+        />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav>
+            <NavLink
+              eventKey="1"
+              as={Link}
+              to="/homework"
+              bsPrefix="customLink"
+            >
+              Schedule & Homework
             </NavLink>
-          </div>
-          <ul className="navList">
-            {/* {leftNavOptions.map((item, index) => ( */}
-            <li>
-              <Link to={"/homework"} onClick={hideBars}>
-                Schedule & Homework
-              </Link>
-            </li>{" "}
-            <li>
-              <Link to={"/student-resources"} onClick={hideBars}>
-                Student Resources
-              </Link>
-            </li>
-            {/* ))} */}
-            <li>
-              <Link to={"/parent-resources"} onClick={hideBars}>
-                Parent Resources
-              </Link>
-            </li>
-            <li>
-              <ScrollHandler>
-                <Link to={"/#about"} onClick={hideBars}>
-                  About
-                </Link>
-              </ScrollHandler>
-            </li>
-            {/* {rightNavOptions.map((item, index) => (
-              <li key={index}>
-                <Link
-                  to={item === "blog" ? "/blog" : `/#${item}`}
-                  onClick={hideBars}
-                >
-                  {item.toUpperCase()}
-                </Link>
-              </li>
-            ))} */}
-          </ul>
-          {/* <button
-            className="nav-btn nav-close-btn"
-            aria-label="Close Navigation"
-            onClick={showNavBar}
-          >
-            X
-          </button> */}
-        </nav>
-        {/* <button
-          className="nav-btn"
-          aria-label="Open Navigation"
-          onClick={showNavBar}
-        > */}
-        {/* <Bars className="icon" width="20px" /> */}
-        {/* </button> */}
-      </header>
-    </Navbar>
+            <NavLink
+              eventKey="2"
+              as={Link}
+              to="/student-resources"
+              bsPrefix="customLink"
+            >
+              Student Resources
+            </NavLink>{" "}
+            <NavLink
+              eventKey="3"
+              as={Link}
+              to="/parent-resources"
+              bsPrefix="customLink"
+            >
+              Parent Resources
+            </NavLink>{" "}
+            <ScrollHandler>
+              <NavLink
+                eventKey="3"
+                as={Link}
+                to="/#about"
+                bsPrefix="customLink"
+              >
+                About
+              </NavLink>
+            </ScrollHandler>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </header>
   );
 }

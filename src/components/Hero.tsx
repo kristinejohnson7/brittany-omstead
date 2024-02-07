@@ -4,7 +4,7 @@ import "../sass/Hero.scss";
 
 export default function Hero() {
   return (
-    <section>
+    <section className="heroSection">
       <div className="heroContainer">
         <img src={hero} alt="painting" />
         <div className="heroText">

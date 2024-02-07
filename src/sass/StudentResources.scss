@@ -94,3 +94,19 @@
     }
   }
 }
+
+@media screen and (max-width: 660px) {
+  .listStyles li {
+    .signInPic {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .listStyles li {
+    .signInPic {
+      width: 275px;
+    }
+  }
+}

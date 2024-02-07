@@ -42,4 +42,17 @@
       }
     }
   }
+
+  @media screen and (max-width: 760px) {
+    .learnMoreText .learnText h2 {
+      font-size: 1.7rem;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .learnMoreText .learnText h2 {
+      font-size: 1.3rem;
+      width: 90%;
+    }
+  }
 }

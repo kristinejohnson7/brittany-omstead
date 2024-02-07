@@ -64,4 +64,36 @@
       }
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    .aboutImg .secondImg {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 100%;
+    padding: 40px 0;
+
+    .aboutImg {
+      display: none;
+    }
+
+    .heroText .heroTextContainer {
+      width: 80%;
+
+      h2 {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .heroText .heroTextContainer {
+      h2 {
+        margin-top: 0px;
+        font-size: 1.7rem;
+      }
+    }
+  }
 }
