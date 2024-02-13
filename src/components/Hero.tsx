@@ -1,17 +1,17 @@
 import React from "react";
-import hero from "../assets/hero.jpg";
 import "../sass/Hero.scss";
 
-export default function Hero() {
+export default function Hero(props: {
+  data: { heroTitle: string; heroImage: any };
+}) {
+  const { heroTitle, heroImage } = props.data;
+
   return (
     <section className="heroSection">
       <div className="heroContainer">
-        <img src={hero} alt="painting" />
+        <img src={heroImage.url} alt="painting" />
         <div className="heroText">
-          <h2>
-            Empowering Minds, Inspiring Futures: <br /> Where Education Takes
-            Flight!
-          </h2>
+          <h2>{heroTitle}</h2>
         </div>
       </div>
     </section>
