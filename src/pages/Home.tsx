@@ -27,9 +27,7 @@ const query = `
 `;
 
 export default function Home() {
-  const { data } = useContentful(query);
-
-  // console.log("hm", data[0].aboutMeText);
+  const { data } = useContentful(query, "home");
 
   return (
     <div>

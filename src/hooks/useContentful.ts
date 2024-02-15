@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const { REACT_APP_CDA_TOKEN, REACT_APP_SPACE_ID } = process.env;
 
 //@ts-ignore
-export default function useContentful(query) {
+export default function useContentful(query, type) {
   const [data, setData] = useState([
     {
       heroTitle: "",
@@ -12,6 +12,21 @@ export default function useContentful(query) {
       aboutMeText: {},
       learnMoreText: {},
       learnMoreImage: "",
+    },
+  ]);
+  const [parentLinkData, setParentLinkData] = useState([
+    {
+      linkTitle: "",
+      linkUrl: "",
+      linkImage: "",
+      linkDescription: "",
+      googleDocsLink: "",
+    },
+  ]);
+  const [parentNewsletterData, setParentNewsletterData] = useState([
+    {
+      newsletterTitle: "",
+      googleDocsLink: "",
     },
   ]);
 
@@ -30,9 +45,18 @@ export default function useContentful(query) {
       )
       .then((response) => response.json())
       .then((json) => {
-        setData(json.data?.homepageCollection?.items);
+        if (type === "home") {
+          setData(json.data?.homepageCollection?.items);
+        }
+        if (type === "parentLink") {
+          setParentLinkData(json.data?.parentLinkCollection?.items);
+        }
+        if (type === "parentNewsletter") {
+          setParentNewsletterData(json.data?.parentNewsletterCollection?.items);
+        }
+        return;
       });
-  }, [query]);
+  }, [query, type]);
 
-  return { data };
+  return { data, parentLinkData, parentNewsletterData };
 }

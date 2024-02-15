@@ -20,6 +20,16 @@ export default function NavBar() {
         />
         <Navbar.Collapse id="navbarScroll">
           <Nav>
+            <ScrollHandler>
+              <NavLink
+                eventKey="3"
+                as={Link}
+                to="/#about"
+                bsPrefix="customLink"
+              >
+                About
+              </NavLink>
+            </ScrollHandler>
             <NavLink
               eventKey="1"
               as={Link}
@@ -44,16 +54,6 @@ export default function NavBar() {
             >
               Parent Resources
             </NavLink>{" "}
-            <ScrollHandler>
-              <NavLink
-                eventKey="3"
-                as={Link}
-                to="/#about"
-                bsPrefix="customLink"
-              >
-                About
-              </NavLink>
-            </ScrollHandler>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
